@@ -2,6 +2,14 @@
 export default {
   content: ["./**/*.{html,js,ts}"],
 
+  theme: {
+    extend: {
+      colors: {
+        borderSoft: "#DFDEDA",
+      },
+    },
+  },
+
   safelist: [
     {
       pattern: /.*/,

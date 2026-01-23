@@ -1,80 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linkdin Clone</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <link rel="stylesheet" href="artdeco-font.zip">
+    <!-- <link rel="stylesheet" href="artdeco-font.zip">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"> -->
 </head>
-<body>
-    <div class="min-h-screen bg-[#F4F2EE]">
-        <header class="border-b border-[#E1E3E1] bg-white">
-            <div class="mx-auto flex items-center justify-between px-29 py-2">
+
+<body class="font-['-apple-system','system-ui','Segoe_UI','Roboto','Helvetica_Neue','Arial','sans-serif']">
+
+    <div class="min-h-screen bg-primary">
+        <header class="border-b border-borderSoft bg-white">
+            <div class="mx-auto flex items-center justify-between px-29 py-1.5">
 
                 <div class="flex items-center gap-1.5">
                     <div class="cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0A66C2" width="40" height="40">
-                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
+                            />
                         </svg>
                     </div>
                     <div class="relative">
                         <i class="fa-solid fa-magnifying-glass text-xs absolute left-3 top-1/2 -translate-y-1/2"></i>
-                        <input type="text" placeholder="Search"class="pl-9 px-3 py-1.5 rounded-2xl text-sm w-70 border border-[#B2B2B2]">
+                        <input type="text" class="pl-9 px-3 py-1.5 rounded-2xl text-sm w-70 placeholder-[#171717] border border-[#AAAAAA]" placeholder="Search" >
                     </div>
                 </div>
-                <div class="flex items-center gap-8 text-gray-600 text-xs pl-25">
+                <div class="flex items-center gap-8 text-gray text-xs pl-25">
                     <div class="flex flex-col items-center text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
-                        <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"/>
+                            <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z" />
                         </svg>
                         <span>Home</span>
                     </div>
                     <div class="flex flex-col items-center cursor-pointer hover:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
-                        <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"/>
+                            <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z" />
                         </svg>
                         <span>My Network</span>
                     </div>
                     <div class="flex flex-col items-center cursor-pointer hover:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
-                        <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zM19 14a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"/>
+                            <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zM19 14a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z" />
                         </svg>
                         <span>Jobs</span>
                     </div>
                     <div class="flex flex-col items-center cursor-pointer hover:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
-                        <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zM8 12.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"/>
+                            <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zM8 12.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z" />
                         </svg>
                         <span>Messaging</span>
                     </div>
                     <div class="flex flex-col items-center cursor-pointer hover:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
-                        <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"/>
+                            <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z" />
                         </svg>
                         <span>Notifications</span>
                     </div>
                     <div class="flex flex-col items-center cursor-pointer">
                         <img src="dp.jpeg" class="w-6 h-6 rounded-full">
-                        <span class="flex items-center gap-1">
+                        <span class="flex items-center gap-1  hover:text-black">
                             Me <i class="fa-solid fa-caret-down text-[10px]"></i>
                         </span>
                     </div>
 
                 </div>
-                <div class="flex items-center gap-6 text-xs text-gray-600  border-l border-[#E8E8E8]">
-                    
-                    <div class="flex flex-col items-center cursor-pointer pl-4">
+                <div class="flex items-center gap-6 text-xs text-gray  border-l border-borderSoft">
+
+                    <div class="flex flex-col items-center cursor-pointer pl-4  hover:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
-                        <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"/>
+                            <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z" />
                         </svg>
                         <span>For Business <i class="fa-solid fa-caret-down text-[10px]"></i></span>
                     </div>
-                    <div class="cursor-pointer">
-                        <svg role="none" aria-hidden="true" class="global-nav__primary-link--premium-chip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" data-supported-dps="24x24" data-test-icon="premium-chip-v2-medium">  
+                    <div class="cursor-pointer  hover:text-black">
+                        <!-- <svg role="none" aria-hidden="true" class="global-nav__primary-link--premium-chip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" data-supported-dps="24x24" data-test-icon="premium-chip-v2-medium">  
                             <use href="#premium-chip-v2-medium" width="24" height="24"></use>
-                        </svg>
+                        </svg> -->
+                        <div class="pl-12">
+                            <img src="Screenshot 2026-01-22 155754.png" class="w-6 " alt="">
+                        </div>
                         <span>
                             Try Premium for PKR 0
                         </span>
@@ -84,32 +94,209 @@
             </div>
         </header>
 
-        <div class="flex flex-row pl-35 pt-15">
-            <div>
-                <div class="border rounded-2xl">
-                    <img src="dp.jpeg" class="w-16 h-16 rounded-full">
-                    <h1 class="text-xl font-bold">
-                        Muhammad Musta...
-                    </h1>
+        <div class="flex flex-row pl-27 pt-5 gap-5.5 ">
+            <div class="flex flex-col gap-2">
+                <div class="bg-white border border-borderSoft rounded-lg w-57.5 h-54">
+                    <div class="h-15 bg-[url('/it.png')] bg-cover bg-center rounded-t-lg cursor-pointer">
+                        <div class="pt-9 pl-3.5 cursor-pointer">
+                            <img src="dp.jpeg" class="w-16 h-16 rounded-full ">
+                        </div>
+                        <h1 class="text-xl font-medium px-4 cursor-pointer">
+                            Muhammad Musta...
+                        </h1>
+                        <p class="px-4 text-xs cursor-pointer">Student at SAL College Computer Science Enthausist Learning Html...</p>
+                        <p class="text-gray text-xs px-4 cursor-pointer">Pakistan</p>
+                        <p class="px-4 text-xs cursor-pointer">School</p>
+                    </div>
                 </div>
-                <div>
-
+                <div class="bg-white border border-borderSoft rounded-lg p-3 w-57.5 relative">
+                    <p class="text-sm pb-2 hover:underline cursor-pointer">Profile Viewers</p>
+                    <span class="text-blue absolute left-50 top-3.5 text-xs hover:underline cursor-pointer">22</span>
+                    <p class="text-sm hover:underline">View all analytics</p>
                 </div>
-                <div>
-
+                <div class="bg-white border border-borderSoft rounded-lg p-3 w-57.5 text-xs font-medium relative">
+                    <p class="text-[#8C8C8C] pb-2">Grow your career with Premium</p>
+                    <div class="absolute top-9.5">
+                        <img src="Screenshot 2026-01-22 155754.png" class="w-3 " alt="">
+                    </div>
+                    <p class="hover:text-blue cursor-pointer pl-4.5">Try 1 month for PKR0</p>
                 </div>
-                <div>
-
+                <div class="bg-white border border-borderSoft rounded-lg p-3 w-57.5 text-sm gap-3 flex flex-col">
+                    <div>
+                        <i class="fa-solid fa-bookmark"></i> <span class="pl-1 cursor-pointer hover:underline">Saved items</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-people-group"></i> <span class="pl-1 cursor-pointer hover:underline">Grroups</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-newspaper"></i> 
+                        <span class="pl-1 cursor-pointer hover:underline">Newsletters</span>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-calendar-days"></i> <span class="pl-1 cursor-pointer hover:underline">Events</span>
+                    </div>
                 </div>
             </div>
-            <div>
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col bg-white border border-borderSoft rounded-lg w-142 h-29 p-4 text-sm relative text-gray-950">
+                    <div>
+                        <img src="dp.jpeg" alt="" class="w-12 h-12 rounded-full ">
+                        <input type="text" class="text-gray-950 hover:bg-[#F3F3F3] border border-input rounded-4xl p-3.5 w-120 absolute top-3.5 left-17.5 outline-none underline-none" placeholder="Start a post" >
+                    </div>
+                    <div class="flex flex-row py-1.5 px-8 justify-between text-sm font-medium items-center">
+                        <div class="hover:bg-[#F3F3F3] p-2 rounded-sm">
+                            <i class="fa-brands fa-youtube text-[#5F9B41] text-xl"></i> <span class="text-[#4E4E4E]">Vedio</span>
+                        </div>
+                        <div class="hover:bg-[#F3F3F3] p-2 rounded-sm">
+                            <i class="fa-regular fa-image text-blue text-xl"></i> <span class="text-[#4E4E4E]">Photo</span>
+                        </div>
+                        <div class="hover:bg-[#F3F3F3] p-2 rounded-sm">
+                            <i class="fa-solid fa-newspaper text-[#E06847] text-xl"></i> <span class="text-[#4E4E4E]">Write article</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="border-t w-119 border-[#BFBDBA]">
 
+                    </div>
+                    <div class="absolute -top-2.5 right-2 cursor-pointer text-xs">
+                        <span class="text-[#62615F]">Sort by:</span> Top <i class="fa-solid fa-caret-down text-[10px]"></i>
+                    </div>
+                </div>
+                <div class=" bg-white border border-borderSoft rounded-lg w-142 p-4 text-sm relative">
+                    <img src="image.png" alt="" class="w-12 h-12 rounded-full ">
+                    <div class="absolute left-17.5 top-2">
+                        <p class="font-semibold text-base hover:text-blue hover:underline cursor-pointer">Fouzia Akram .</p> <span class="absolute top-1 left-28 text-gray cursor-pointer">1st</span>
+                        <p class="text-xs text-[#8C8C8C] cursor-pointer">Electrical Maintenance Sub Section |/C @ Haier |Ex-Executive Electrical E...</p>
+                        <p class="text-xs text-[#8C8C8C] ">1w . <i class="fa-solid fa-user-group text-gray"></i></p>
+                    </div>
+                    <div>
+                        <span class="absolute right-15 top-3 hover:bg-[#F3F3F3] rounded-full p-2">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.25 8C3.25 8.69 2.69 9.25 2 9.25C1.31 9.25 0.75 8.69 0.75 8C0.75 7.31 1.31 6.75 2 6.75C2.69 6.75 3.25 7.31 3.25 8ZM14 6.75C13.31 6.75 12.75 7.31 12.75 8C12.75 8.69 13.31 9.25 14 9.25C14.69 9.25 15.25 8.69 15.25 8C15.25 7.31 14.69 6.75 14 6.75ZM8 6.75C7.31 6.75 6.75 7.31 6.75 8C6.75 8.69 7.31 9.25 8 9.25C8.69 9.25 9.25 8.69 9.25 8C9.25 7.31 8.69 6.75 8 6.75Z" fill="currentColor"></path>
+                            </svg>
+                        </span>
+                        <span class="absolute right-4 top-3 hover:bg-[#F3F3F3] rounded-full p-2">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.78 12.72C14.07 13.01 14.07 13.49 13.78 13.78C13.63 13.93 13.44 14 13.25 14C13.06 14 12.87 13.93 12.72 13.78L8 9.06L3.28 13.78C3.13 13.93 2.94 14 2.75 14C2.56 14 2.37 13.93 2.22 13.78C1.93 13.49 1.93 13.01 2.22 12.72L6.94 8L2.22 3.28C1.93 2.99 1.93 2.51 2.22 2.22C2.51 1.93 2.99 1.93 3.28 2.22L8 6.94L12.72 2.22C13.01 1.93 13.49 1.93 13.78 2.22C14.07 2.51 14.07 2.99 13.78 3.28L9.06 8L13.78 12.72Z" fill="currentColor"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="pt-2.5">It was an absolute privilege to attend the exclusive webinar on Global Halal Development organized by the Halal Research Council. A sincere thank you to Mr. Muhammad Zubair Mughal. CEO of the Halal Research Council. for...more</p>
+                    <div class="text-center items-center">
+                        <img src="download.png" class="p-2">
+                    </div>
+                </div>
             </div>
-            <div>
-
+            <div class="flex flex-col gap-1.5">
+                <div class=" bg-white border border-borderSoft rounded-lg w-76 p-4 text-sm relative">
+                    <span class="text-base font-medium">Today's Puzzle</span>
+                    <div class="p-1 flex flex-row gap-3 cursor-pointer">
+                        <a href="/games/zip/" id="ember225" class="ember-view ps-basic-entrypoint__link link-without-hover-state">
+                            <img class="mr3" width="64" height="64" src="https://static.licdn.com/aero-v1/sc/h/bhcn11cebvq6jyb4ytx000xre" alt="Preview GIF of the Zip game">
+                        </a>
+                        <div class="cursor-pointer">
+                            <p class="text-sm font-medium">Zip - a quick brain teaser</p>
+                            <p class="text-xs text-shadegray pb-2">Solve in 60s or less!</p>
+                            <p class="text-xs text-shadegray">9 connections Played</p>
+                        </div>
+                        <span class="absolute right-2.5 top-17 cursor-pointer">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 bg-white border border-borderSoft rounded-lg w-76 p-4 text-sm relative">
+                    <p class="text-base font-semibold cursor-pointer"> Add to your feed</p>
+                    <div class="flex flex-row gap-3">
+                        <div class="cursor-pointer">
+                            <img src="download (4).png" alt="" class="w-10 h-10 rounded-full ">
+                        </div>
+                        <div class="flex flex-col cursor-pointer">
+                            <p class="font-semibold text-base">Linkedin</p>
+                            <p class="text-xs text-shadegray pb-2">Compony . Software Development</p>
+                            <div class="cursor-pointer">
+                                <button class="btn-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="15" width="20" viewBox="0 0 24 24" fill="currentColor" focusable="false" aria-hidden="true" class="text-black">
+                                        <path d="M12 3a1 1 0 00-1 1v7H4a1 1 0 000 2h7v7a1 1 0 002 0v-7h7a1 1 0 000-2h-7V4a1 1 0 00-1-1Z" />
+                                    </svg>
+                                    <span class="font-semibold text-lightgrey hover:text-black">Follow</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-3">
+                        <div class="cursor-pointer">
+                            <img src="download (1).png" alt="" class="w-10 h-10 rounded-full ">
+                        </div>
+                        <div class="flex flex-col cursor-pointer">
+                            <p class="font-semibold text-base">GitHub</p>
+                            <p class="text-xs text-shadegray pb-2">Compony . Software Development</p>
+                            <div class="cursor-pointer">
+                                <button class="btn-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="15" width="20" viewBox="0 0 24 24" fill="currentColor" focusable="false" aria-hidden="true" class="text-black">
+                                        <path d="M12 3a1 1 0 00-1 1v7H4a1 1 0 000 2h7v7a1 1 0 002 0v-7h7a1 1 0 000-2h-7V4a1 1 0 00-1-1Z" />
+                                    </svg>
+                                    <span class="font-semibold text-lightgrey hover:text-black">Follow</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-3">
+                        <div class="cursor-pointer">
+                            <img src="download (5).png" alt="" class="w-10 h-10 rounded-full ">
+                        </div>
+                        <div class="flex flex-col cursor-pointer">
+                            <p class="font-semibold text-base">Google</p>
+                            <p class="text-xs text-shadegray pb-2">Compony . Software Development</p>
+                            <div class="cursor-pointer">
+                                <button class="btn-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="15" width="20" viewBox="0 0 24 24" fill="currentColor" focusable="false" aria-hidden="true" class="text-black">
+                                        <path d="M12 3a1 1 0 00-1 1v7H4a1 1 0 000 2h7v7a1 1 0 002 0v-7h7a1 1 0 000-2h-7V4a1 1 0 00-1-1Z" />
+                                    </svg>
+                                    <span class="font-semibold text-lightgrey hover:text-black">Follow</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-[#232323] font-medium hover:bg-[#F3F3F3] cursor-pointer rounded-sm">
+                        <span>View all Recommendations <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="pl-30">
+                    <div class="flex flex-row items-center justify-between bg-[#F8FAFD] border border-borderSoft rounded-lg w-70 px-2 pt-4 pb-1 text-sm relative cursor-pointer">
+                        <div class="flex flex-row relative">
+                            <div>
+                                <img src="dp.jpeg" alt="" class="w-6 h-6 rounded-full ">
+                            </div>
+                            <div class="absolute left-8">
+                                Messaging
+                            </div>
+                        </div>
+                        <div class=" flex flex-row items-center gap-3">
+                            <div>
+                                <span class=" hover:bg-[#F3F3F3] ">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.25 8C3.25 8.69 2.69 9.25 2 9.25C1.31 9.25 0.75 8.69 0.75 8C0.75 7.31 1.31 6.75 2 6.75C2.69 6.75 3.25 7.31 3.25 8ZM14 6.75C13.31 6.75 12.75 7.31 12.75 8C12.75 8.69 13.31 9.25 14 9.25C14.69 9.25 15.25 8.69 15.25 8C15.25 7.31 14.69 6.75 14 6.75ZM8 6.75C7.31 6.75 6.75 7.31 6.75 8C6.75 8.69 7.31 9.25 8 9.25C8.69 9.25 9.25 8.69 9.25 8C9.25 7.31 8.69 6.75 8 6.75Z" fill="currentColor"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>

@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --color-borderSoft: #DFDEDA;
+  --color-input: #AAAAAA;
+  --color-primary: #F4F2EE;
+  --color-gray: #666666;
+  --color-lightgrey: #868686;
+  --color-shadegray: #9E9E9E;
+  --color-blue: #0A66C2;
+}
+@layer components {
+  .btn-primary {
+    @apply flex items-center hover:bg-[#F3F3F3] border border-lightgrey rounded-3xl px-3.5 py-1.5 hover:border-black;
+  }
+}
+
