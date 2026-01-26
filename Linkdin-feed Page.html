@@ -28,7 +28,7 @@
                     </div>
                     <div class="relative">
                         <i class="fa-solid fa-magnifying-glass text-xs absolute left-3 top-1/2 -translate-y-1/2"></i>
-                        <input type="text" class="pl-9 px-3 py-1.5 rounded-2xl text-sm w-70 placeholder-[#171717] border border-[#AAAAAA]" placeholder="Search" >
+                        <input type="text" class="pl-9 px-3 py-1.5 rounded-2xl text-sm w-70 border border-input" placeholder="Search" >
                     </div>
                 </div>
                 <div class="flex items-center gap-8 text-gray text-xs pl-25">
@@ -99,7 +99,7 @@
                 <div class="bg-white border border-borderSoft rounded-lg w-57.5 h-54">
                     <div class="h-15 bg-[url('/it.png')] bg-cover bg-center rounded-t-lg cursor-pointer">
                         <div class="pt-9 pl-3.5 cursor-pointer">
-                            <img src="dp.jpeg" class="w-16 h-16 rounded-full ">
+                            <img src="dp.jpeg" class="w-16 h-16 rounded-full object-fill max-w-100 border-2 border-white ">
                         </div>
                         <h1 class="text-xl font-medium px-4 cursor-pointer">
                             Muhammad Musta...
@@ -123,35 +123,41 @@
                 </div>
                 <div class="bg-white border border-borderSoft rounded-lg p-3 w-57.5 text-sm gap-3 flex flex-col">
                     <div>
-                        <i class="fa-solid fa-bookmark"></i> <span class="pl-1 cursor-pointer hover:underline">Saved items</span>
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="pl-1 cursor-pointer hover:underline">Saved items</span>
                     </div>
                     <div>
-                        <i class="fa-solid fa-people-group"></i> <span class="pl-1 cursor-pointer hover:underline">Grroups</span>
+                        <i class="fa-solid fa-people-group"></i> 
+                        <span class="pl-1 cursor-pointer hover:underline">Grroups</span>
                     </div>
                     <div>
                         <i class="fa-solid fa-newspaper"></i> 
                         <span class="pl-1 cursor-pointer hover:underline">Newsletters</span>
                     </div>
                     <div>
-                        <i class="fa-regular fa-calendar-days"></i> <span class="pl-1 cursor-pointer hover:underline">Events</span>
+                        <i class="fa-regular fa-calendar-days"></i> 
+                        <span class="pl-1 cursor-pointer hover:underline">Events</span>
                     </div>
                 </div>
             </div>
             <div class="flex flex-col gap-4">
-                <div class="flex flex-col bg-white border border-borderSoft rounded-lg w-142 h-29 p-4 text-sm relative text-gray-950">
+                <div class="flex flex-col bg-white border border-borderSoft rounded-lg w-142 h-29 p-4 text-sm relative">
                     <div>
                         <img src="dp.jpeg" alt="" class="w-12 h-12 rounded-full ">
-                        <input type="text" class="text-gray-950 hover:bg-[#F3F3F3] border border-input rounded-4xl p-3.5 w-120 absolute top-3.5 left-17.5 outline-none underline-none" placeholder="Start a post" >
+                        <input type="text" class="placeholder-[#171717] text-sm font-medium hover:bg-[#F3F3F3] border border-input rounded-4xl p-3.5 w-120 absolute top-3.5 left-17.5 outline-none underline-none" placeholder="Start a post" >
                     </div>
                     <div class="flex flex-row py-1.5 px-8 justify-between text-sm font-medium items-center">
                         <div class="hover:bg-[#F3F3F3] p-2 rounded-sm">
-                            <i class="fa-brands fa-youtube text-[#5F9B41] text-xl"></i> <span class="text-[#4E4E4E]">Vedio</span>
+                            <i class="fa-brands fa-youtube text-[#5F9B41] text-xl">
+                            </i> <span class="text-[#4E4E4E]">Vedio</span>
                         </div>
                         <div class="hover:bg-[#F3F3F3] p-2 rounded-sm">
-                            <i class="fa-regular fa-image text-blue text-xl"></i> <span class="text-[#4E4E4E]">Photo</span>
+                            <i class="fa-regular fa-image text-blue text-xl"></i> 
+                            <span class="text-[#4E4E4E]">Photo</span>
                         </div>
                         <div class="hover:bg-[#F3F3F3] p-2 rounded-sm">
-                            <i class="fa-solid fa-newspaper text-[#E06847] text-xl"></i> <span class="text-[#4E4E4E]">Write article</span>
+                            <i class="fa-solid fa-newspaper text-[#E06847] text-xl"></i> 
+                            <span class="text-[#4E4E4E]">Write article</span>
                         </div>
                     </div>
                 </div>
@@ -160,7 +166,8 @@
 
                     </div>
                     <div class="absolute -top-2.5 right-2 cursor-pointer text-xs">
-                        <span class="text-[#62615F]">Sort by:</span> Top <i class="fa-solid fa-caret-down text-[10px]"></i>
+                        <span class="text-[#62615F]">Sort by:</span> Top 
+                        <i class="fa-solid fa-caret-down text-[10px]"></i>
                     </div>
                 </div>
                 <div class=" bg-white border border-borderSoft rounded-lg w-142 p-4 text-sm relative">
@@ -184,7 +191,7 @@
                     </div>
                     <p class="pt-2.5">It was an absolute privilege to attend the exclusive webinar on Global Halal Development organized by the Halal Research Council. A sincere thank you to Mr. Muhammad Zubair Mughal. CEO of the Halal Research Council. for...more</p>
                     <div class="text-center items-center">
-                        <img src="download.png" class="p-2">
+                        <img src="download.png" class="p-4">
                     </div>
                 </div>
             </div>
@@ -205,7 +212,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="flex flex-col gap-3 bg-white border border-borderSoft rounded-lg w-76 p-4 text-sm relative">
+                <div class="flex flex-col gap-3 bg-white border border-borderSoft rounded-lg w-76 py-5 px-4 text-sm relative">
                     <p class="text-base font-semibold cursor-pointer"> Add to your feed</p>
                     <div class="flex flex-row gap-3">
                         <div class="cursor-pointer">
@@ -241,11 +248,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row gap-3">
+                    <div class="flex flex-row ">
                         <div class="cursor-pointer">
-                            <img src="download (5).png" alt="" class="w-10 h-10 rounded-full ">
+                            <img src="download__5_-removebg-preview.png" alt="" class=" h-10 rounded-full object-cover absolute left-1">
                         </div>
-                        <div class="flex flex-col cursor-pointer">
+                        <div class="flex flex-col cursor-pointer pl-13">
                             <p class="font-semibold text-base">Google</p>
                             <p class="text-xs text-shadegray pb-2">Compony . Software Development</p>
                             <div class="cursor-pointer">

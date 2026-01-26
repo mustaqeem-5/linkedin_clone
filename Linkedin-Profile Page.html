@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Profile Page</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body class="font-['-apple-system','system-ui','Segoe_UI','Roboto','Helvetica_Neue','Arial','sans-serif']">
+    <div class="min-h-screen bg-primary">
+        <header class="border-b border-borderSoft bg-white">
+            <div class="mx-auto flex items-center justify-between px-29 py-1.5">
+
+                <div class="flex items-center gap-1.5">
+                    <div class="cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0A66C2" width="40" height="40">
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
+                            />
+                        </svg>
+                    </div>
+                    <div class="relative">
+                        <i class="fa-solid fa-magnifying-glass text-xs absolute left-3 top-1/2 -translate-y-1/2"></i>
+                        <input type="text" class="pl-9 px-3 w-69.5 py-1.5 rounded-2xl text-sm border border-input" placeholder="Search" >
+                    </div>
+                </div>
+                <div class="flex items-center gap-7.5 text-gray text-xs pl-25">
+                    <div class="flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
+                            <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z" />
+                        </svg>
+                        <span>Home</span>
+                    </div>
+                    <div class="flex flex-col items-center cursor-pointer hover:text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
+                            <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z" />
+                        </svg>
+                        <span>My Network</span>
+                    </div>
+                    <div class="flex flex-col items-center cursor-pointer hover:text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
+                            <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zM19 14a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z" />
+                        </svg>
+                        <span>Jobs</span>
+                    </div>
+                    <div class="flex flex-col items-center cursor-pointer hover:text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
+                            <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zM8 12.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z" />
+                        </svg>
+                        <span>Messaging</span>
+                    </div>
+                    <div class="flex flex-col items-center cursor-pointer hover:text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
+                            <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z" />
+                        </svg>
+                        <span>Notifications</span>
+                    </div>
+                    <div class="flex flex-col items-center cursor-pointer">
+                        <img src="dp.jpeg" class="w-6 h-6 rounded-full">
+                        <span class="flex items-center gap-1  hover:text-black">
+                            Me <i class="fa-solid fa-caret-down text-[10px]"></i>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="flex items-center gap-4 text-xs text-gray  border-l border-borderSoft">
+
+                    <div class="flex flex-col items-center cursor-pointer pl-4  hover:text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
+                            <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z" />
+                        </svg>
+                        <span>For Business <i class="fa-solid fa-caret-down text-[10px]"></i></span>
+                    </div>
+                    <div class="cursor-pointer  hover:text-black">
+                        <!-- <svg role="none" aria-hidden="true" class="global-nav__primary-link--premium-chip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" data-supported-dps="24x24" data-test-icon="premium-chip-v2-medium">  
+                            <use href="#premium-chip-v2-medium" width="24" height="24"></use>
+                        </svg> -->
+                        <div class="pl-12">
+                            <img src="Screenshot 2026-01-22 155754.png" class="w-6 " alt="">
+                        </div>
+                        <span>
+                            Try Premium for PKR 0
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        
+    </div>
+</body>
+</html>
