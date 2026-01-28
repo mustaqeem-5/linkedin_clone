@@ -361,6 +361,9 @@
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
@@ -370,11 +373,20 @@
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
+  .w-12\.5 {
+    width: calc(var(--spacing) * 12.5);
+  }
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
   .w-35 {
     width: calc(var(--spacing) * 35);
+  }
+  .w-42 {
+    width: calc(var(--spacing) * 42);
+  }
+  .w-42\.5 {
+    width: calc(var(--spacing) * 42.5);
   }
   .w-57 {
     width: calc(var(--spacing) * 57);
@@ -408,6 +420,9 @@
   }
   .w-200 {
     width: calc(var(--spacing) * 200);
+  }
+  .w-425 {
+    width: calc(var(--spacing) * 425);
   }
   .w-fit {
     width: fit-content;
@@ -690,6 +705,9 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
@@ -740,6 +758,9 @@
   }
   .pl-1 {
     padding-left: calc(var(--spacing) * 1);
+  }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
   }
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
@@ -857,8 +878,14 @@
   .text-\[\#787878\] {
     color: #787878;
   }
+  .text-\[\#\<\/div\>\] {
+    color: #</div>;
+  }
   .text-\[\#B2B2B2\] {
     color: #B2B2B2;
+  }
+  .text-\[\#E8E8E8\] {
+    color: #E8E8E8;
   }
   .text-\[\#E06847\] {
     color: #E06847;
