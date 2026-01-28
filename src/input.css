@@ -8,6 +8,7 @@
   --color-lightgrey: #868686;
   --color-shadegray: #9E9E9E;
   --color-blue: #0A66C2;
+  --color-use-gray: #F3F3F3;
 }
 @layer components {
   .btn-primary {
