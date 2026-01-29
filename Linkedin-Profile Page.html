@@ -10,10 +10,10 @@
 </head>
 
 <body class="font-['-apple-system','system-ui','Segoe_UI','Roboto','Helvetica_Neue','Arial','sans-serif']">
-    <div class="min-h-screen bg-primary">
+    <div class="grid  min-h-screen justify-center bg-primary">
 
         <header class="border-b border-borderSoft bg-white">
-            <div class="mx-auto flex items-center justify-between px-29 py-1.5">
+            <div class="mx-auto flex items-center justify-between pl-29 pr-28 py-1.5">
 
                 <div class="flex items-center gap-1.5">
                     <div class="cursor-pointer">
@@ -22,85 +22,83 @@
                             />
                         </svg>
                     </div>
-
                     <div class="relative">
                         <i class="fa-solid fa-magnifying-glass text-xs absolute left-3 top-1/2 -translate-y-1/2"></i>
-                        <input type="text" class="pl-9 px-3 w-69.5 py-1.5 rounded-2xl text-sm border border-input" placeholder="Search">
+                        <input type="text" class="pl-9 px-3 py-1.5 rounded-2xl text-sm w-70 border border-input" placeholder="Search" >
                     </div>
                 </div>
-
-                <div class="flex items-center gap-7.5 text-gray text-xs pl-25">
-                    <div class="flex flex-col items-center">
+                <div class="flex items-center gap-8 text-gray text-xs pl-25 ">
+                    <div class="flex flex-col items-center hover:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
                             <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z" />
                         </svg>
                         <span>Home</span>
                     </div>
-
                     <div class="flex flex-col items-center cursor-pointer hover:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
                             <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z" />
                         </svg>
                         <span>My Network</span>
                     </div>
-
                     <div class="flex flex-col items-center cursor-pointer hover:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
                             <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zM19 14a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z" />
                         </svg>
                         <span>Jobs</span>
                     </div>
-
                     <div class="flex flex-col items-center cursor-pointer hover:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
                             <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zM8 12.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z" />
                         </svg>
                         <span>Messaging</span>
                     </div>
-
                     <div class="flex flex-col items-center cursor-pointer hover:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
                             <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z" />
                         </svg>
                         <span>Notifications</span>
                     </div>
-
                     <div class="flex flex-col items-center cursor-pointer">
                         <img src="dp.jpeg" class="w-6 h-6 rounded-full">
-                        <span class="flex items-center gap-1 hover:text-black">
+                        <span class="flex items-center gap-1  hover:text-black">
                             Me <i class="fa-solid fa-caret-down text-[10px]"></i>
                         </span>
                     </div>
-                </div>
 
-                <div class="flex items-center gap-4 text-xs text-gray border-l border-borderSoft">
-                    <div class="flex flex-col items-center cursor-pointer pl-4 hover:text-black">
+                </div>
+                <div class="flex items-center gap-6 text-xs text-gray  border-l border-borderSoft">
+
+                    <div class="flex flex-col items-center cursor-pointer pl-4  hover:text-black">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24">
                             <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z" />
                         </svg>
                         <span>For Business <i class="fa-solid fa-caret-down text-[10px]"></i></span>
                     </div>
-
-                    <div class="cursor-pointer hover:text-black">
+                    <div class="cursor-pointer  hover:text-black">
+                        <!-- <svg role="none" aria-hidden="true" class="global-nav__primary-link--premium-chip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" data-supported-dps="24x24" data-test-icon="premium-chip-v2-medium">  
+                            <use href="#premium-chip-v2-medium" width="24" height="24"></use>
+                        </svg> -->
                         <div class="pl-12">
-                            <img src="Screenshot 2026-01-22 155754.png" class="w-6">
+                            <img src="Screenshot 2026-01-22 155754.png" class="w-6 " alt="">
                         </div>
-                        <span>Try Premium for PKR 0</span>
+                        <span>
+                            Try Premium for PKR 0
+                        </span>
                     </div>
                 </div>
 
             </div>
         </header>
 
-        <div class="grid grid-cols-[1fr_320px] gap-6 px-28 pt-6 rounded-xl">
-
+        <div class="grid grid-cols-[1fr_320px] gap-6 pl-28 pr-20 pt-6 rounded-xl">
+            
             <div class="flex flex-col gap-2">
 
                 <div>
                     <div class="relative flex flex-col border border-borderSoft rounded-t-lg">
-                        <div class="w-200 h-50 bg-[url('/bg-img.png')] bg-cover bg-center rounded-t-lg cursor-pointer">
+                        <div class="w-auto h-50 bg-[url('/bg.png')] bg-cover bg-center rounded-t-lg cursor-pointer">
                             <div class="pl-6 cursor-pointer object-cover">
-                                <img src="dp.jpeg" class="rounded-full w-35 h-35 absolute top-25 max-w-100 border-3 border-white">
+                                <img src="dp.jpeg" class="rounded-full w-40 h-40 object-cover absolute top-22 max-w-100 border-3 border-white">
                             </div>
                             <div class="absolute right-4 top-6 px-2 py-1 bg-white rounded-full ">
                                 <i class="fa-solid fa-pen text-blue text-xs hover:text-[#004182]"></i>
@@ -108,7 +106,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col bg-white pt-15 pb-6 pl-6 gap-2 rounded-b-lg border border-borderSoft">
+                    <div class="flex flex-col bg-white pt-15 pb-6 pl-6 rounded-b-lg border border-borderSoft">
 
                         <div class="flex flex-row gap-1.5 relative">
                             <span class="text-2xl font-semibold hover:bg-[#EBEBEB] rounded-xs">
@@ -130,8 +128,8 @@
                                 </div>
                             </div>
                         </div>
-
-                        <p class="text-[#222222]">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-[#222222]">
                             Student at SAL College | Frontend Developer | Enthusiast in Computer
                             <br> Science | Skilled in HTML, CSS, TailwindCSS, JavaScript, and C++ |
                             <br> Always learning and improving my skills
@@ -155,10 +153,12 @@
                             <button class="border border-blue text-blue px-3 py-1 rounded-4xl hover:bg-[#EBF4FD] hover:border-[#004182] hover:border-2 font-semibold">
                                 Enhance profile
                             </button>
-                            <button class="border border-[#424242] px-3 py-1 rounded-4xl hover:bg-use-gray hover:border-2 font-semibold">
+                            <button class="border text-[#424242] border-[#424242] hover:border-[#181818] hover:text-[#181818] px-3 py-1 rounded-4xl hover:bg-use-gray hover:border-2 font-semibold">
                                 Resources
                             </button>
                         </div>
+                        </div>
+                        
 
                         <div class="grid grid-cols-1 gap-3 mt-2">
                             <div class="flex flex-row gap-4">
@@ -187,7 +187,7 @@
                     <div class="p-6.5 flex flex-col gap-3 rounded-lg">
                         <div class="relative">
                             <div>
-                                <p class="text-2xl font-medium">Analytics</p>
+                                <p class="text-xl font-medium">Analytics</p>
                                 <p class="items-center text-gray">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
                                     <path d="M8 3a8.59 8.59 0 00-8 5 8.54 8.54 0 008 5 8.55 8.55 0 008-5 8.55 8.55 0 00-8-5zm0 8a3 3 0 113-3 3 3 0 01-3 3zm2-3a2 2 0 11-2-2 2 2 0 012 2z">
@@ -269,7 +269,7 @@
                             </div>
                         </div>
                         <div class="pr-11">
-                            <button class="border border-blue text-blue py-1 px-3 rounded-4xl hover:bg-[#EBF4FD] hover:border-2 cursor-pointer">
+                            <button class="border border-blue text-blue py-1 px-3 rounded-4xl hover:bg-[#EBF4FD] hover:border-2 cursor-pointer font-medium">
                                 Create a post
                             </button>
                             <i class="fa-solid fa-pen absolute right-6 top-8 text-xl"></i>
@@ -381,7 +381,7 @@
                         </div>
                         <div class="pt-3">
                             <div class=" bg-white p-2.5 rounded-b-lg border-t border-borderSoft items-center text-center text-[#404040] font-medium hover:bg-use-gray hover:text-[#181818]">
-                                Show all analytics 
+                                Show all posts 
                                 <span><i class="fa-solid fa-arrow-right"></i></span>
                             </div>
                         </div>
@@ -415,10 +415,52 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 bg-white border-borderSoft border rounded-lg p-4 relative">
-                    <div class="flex flex-row justify-between">
+                <div class="grid grid-cols-1 bg-white border-borderSoft border rounded-lg pt-4 relative">
+                    <div class="flex flex-row justify-between px-6 items-center">
                         <div>
                             <p class="text-xl font-medium">Education</p>
+                        </div>
+                        <div class="flex">
+                            <div class="hover:bg-use-gray p-3 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="20" viewBox="0 0 24 24" fill="currentColor" focusable="false" aria-hidden="true" class="text-black">
+                                            <path d="M12 3a1 1 0 00-1 1v7H4a1 1 0 000 2h7v7a1 1 0 002 0v-7h7a1 1 0 000-2h-7V4a1 1 0 00-1-1Z" />
+                                </svg>
+                            </div>
+                            <div class="hover:bg-use-gray p-3 rounded-full">
+                                <i class="fa-solid fa-pen"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row py-4 px-6">
+                        <div>
+                            <img src="Screenshot 2026-01-26 173918.png" alt="" class="cursor-pointer w-12.5">
+                        </div>
+                    
+                        <div class="pl-2">
+                            <p class="font-medium cursor-pointer hover:text-blue hover:underline">School</p>
+                            <p class="text-gray cursor-pointer">2024</p>
+                        </div>
+                    </div>    
+                    <hr class="text-[#E8E8E8]">
+                    <div class="flex flex-row py-4 px-6">
+                        <div>
+                            <img src="Screenshot 2026-01-26 173918.png" alt="" class="w-12.5 cursor-pointer">
+                        </div>
+                        <div class="pl-2">
+                            <p class="font-medium cursor-pointer hover:text-blue hover:underline">Shah Abdul Latif Goverment College</p>
+                            <p class="text-[#191919] cursor-pointer">Engineering</p>
+                        </div>
+                    </div>
+                    <div class=" bg-white p-2.5 rounded-b-lg border-t border-borderSoft items-center text-center text-[#404040] font-medium hover:bg-use-gray hover:text-[#181818]">
+                        Show all 3 educations
+                         <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 bg-white border-borderSoft border rounded-lg">
+                    <div class="flex flex-row justify-between items-center pt-4 pb-2 px-6">
+                        <div class="text-xl font-medium">
+                            Skills
                         </div>
                         <div class="flex gap-4">
                             <div class="hover:bg-use-gray p-3 rounded-full">
@@ -431,34 +473,285 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row py-4">
-                        <div>
-                            <img src="Screenshot 2026-01-26 173918.png" alt="" class="cursor-pointer w-12.5">
+                    <div class="px-6 pb-6 text-lg font-medium"> 
+                        <p>Engineering</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 bg-white border-borderSoft border rounded-lg relative">
+                    <div class="p-6">
+                        <p class="text-xl font-medium pb-3">Intrests</p>
+                        <div class="font-medium text-sm">
+                            <span class="text-[#01754F] cursor-pointer hover:bg-use-gray py-3 px-1">
+                                Companies
+                            </span>
+                            <span class="pl-10"></span>
+                            <span class=" text-[#404040] cursor-pointer hover:bg-use-gray py-3 px-1">
+                                Schools
+                            </span>
                         </div>
-                    
-                        <div class="pl-2">
-                            <p class="font-medium cursor-pointer hover:text-blue hover:underline">School</p>
-                            <p class="text-gray cursor-pointer">2024</p>
-                        </div>
-                    </div>    
+                    </div>
                     <hr class="text-[#E8E8E8]">
-                    <div class="flex flex-row py-4">
-                        <div>
-                            <img src="Screenshot 2026-01-26 173918.png" alt="" class="w-12.5 cursor-pointer">
+                    <div class="flex flex-row gap-17 p-6">
+                        <div class="flex">
+                            <div>
+                                <img src="Screenshot 2026-01-28 212924.png" alt="" class="cursor-pointer">
+                            </div>
+                            <div>
+                                <p class="text-base font-medium hover:text-blue hover:underline cursor-pointer">Lahore University of Management <br> Science</p>
+                                <p class="text-gray cursor-pointer">229,740 followers</p>
+                                <button class="border border-[#424242] px-3 py-1 rounded-4xl hover:bg-use-gray hover:border-2 font-semibold">
+                                   <i class="fa-solid fa-check cursor-pointer"></i> Following
+                                </button>
+                            </div>
                         </div>
-                        <div class="pl-2">
-                            <p class="font-medium cursor-pointer hover:text-blue hover:underline">Shah Abdul Latif Goverment College</p>
-                            <p class="text-[#191919] cursor-pointer">Engineering</p>
+                        <div class="flex ">
+                            <div>
+                                <img src="Screenshot 2026-01-28 212944.png" alt="" class="cursor-pointer">
+                            </div>
+                            <div>
+                                <p class="text-base font-medium hover:text-blue hover:underline cursor-pointer">Softlexify zone</p>
+                                <p class="text-gray cursor-pointer">710 followers</p>
+                                <button class="border border-[#424242] px-3 py-1 rounded-4xl hover:bg-use-gray cursor-pointer hover:border-2 font-semibold">
+                                   <i class="fa-solid fa-check "></i> Following
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col gap-4">
-                <div class="bg-white border border-borderSoft rounded-lg p-4">
-                    fff
+            <div class="grid grid-cols-1 w-75">
+                <div class="flex flex-col gap-2 ">
+                    <div class="p-4 bg-white border-borderSoft border rounded-lg relative">
+                        <div class="flex justify-between">
+                            <div class="text-lg font-medium">
+                                Profile language
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-pen cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <p class="pb-4 text-gray text-sm">English</p>
+                        <hr class="text-[#E8E8E8]">
+                        <div class="flex justify-between">
+                            <div class="pt-4 text-lg font-medium">
+                                Public profile & URL
+                            </div>
+                            <div class="pt-4 cursor-pointer">
+                                <i class="fa-solid fa-pen"></i>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray">www.linkedin.com/in/muhammad-mustaqeem-a28272337</p>
+                    </div>
+
+                    <div>
+                       <img src="Screenshot 2026-01-29 160007.png" class="w-111 cursor-pointer" alt="">
+                    </div>
+
+                    <div class="fixed bottom-0 right-4 z-50">
+                        <div class="flex flex-row items-center justify-between bg-[#F8FAFD] border border-borderSoft rounded-lg w-70 px-2 py-3 text-sm relative cursor-pointer">
+                            <div class="flex flex-row relative">
+                                <div>
+                                    <img src="dp.jpeg" alt="" class="w-6 h-6 rounded-full ">
+                                </div>
+                                <div class="absolute left-8">
+                                    Messaging
+                                </div>
+                            </div>
+                            <div class=" flex flex-row items-center gap-3">
+                                <div>
+                                    <span class=" hover:bg-use-gray ">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.25 8C3.25 8.69 2.69 9.25 2 9.25C1.31 9.25 0.75 8.69 0.75 8C0.75 7.31 1.31 6.75 2 6.75C2.69 6.75 3.25 7.31 3.25 8ZM14 6.75C13.31 6.75 12.75 7.31 12.75 8C12.75 8.69 13.31 9.25 14 9.25C14.69 9.25 15.25 8.69 15.25 8C15.25 7.31 14.69 6.75 14 6.75ZM8 6.75C7.31 6.75 6.75 7.31 6.75 8C6.75 8.69 7.31 9.25 8 9.25C8.69 9.25 9.25 8.69 9.25 8C9.25 7.31 8.69 6.75 8 6.75Z" fill="currentColor"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <i class="fa-solid fa-chevron-up"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-4 px-6 bg-white border-borderSoft border rounded-lg ">
+                        <div class="relative">
+                            <p class="text-base font-medium">
+                              Who your viewers also viewed
+                            </p>
+                            <p class="text-gray">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                     <path d="M8 3a8.59 8.59 0 00-8 5 8.54 8.54 0 008 5 8.55 8.55 0 008-5 8.55 8.55 0 00-8-5zm0 8a3 3 0 113-3 3 3 0 01-3 3zm2-3a2 2 0 11-2-2 2 2 0 012 2z"></path>
+                                </svg>
+                                <span class="absolute top-5 left-5 text-[#787878]">Private to you</span>
+                            </p>
+                        </div>
+                        <div class="flex pt-3 pb-3">
+                            <div>
+                                <img src="Screenshot 2026-01-29 161950.png" class="w-18" alt="">
+                            </div>
+                            <div class="font-medium pl-3">
+                                Someone in the Technology, Information…
+                                <div class="py-2">
+                                    <button class="border border-[#424242] px-4 py-1 rounded-4xl hover:bg-use-gray hover:border-2 font-semibold">
+                                   View
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="text-[#E8E8E8]">
+
+                        <div class="flex pt-3 pb-3">
+                            <div>
+                                <img src="Screenshot 2026-01-29 161950.png" class="w-18" alt="">
+                            </div>
+                            <div class="font-medium pl-3">
+                                Someone at Bridgewater State University <br>
+                                <div class="py-2">
+                                    <button class="border border-[#424242] px-4 py-1 rounded-4xl hover:bg-use-gray hover:border-2 font-semibold">
+                                   View
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="text-[#E8E8E8]">
+
+                        <div class="flex pt-3 pb-3">
+                            <div>
+                                <img src="Screenshot 2026-01-29 161950.png" class="w-13" alt="">
+                            </div>
+                            <div class="font-medium pl-3">
+                                Software Developer at Upwork <br>
+                                <div class="py-2">
+                                    <button class="border border-[#424242] px-4 py-1 rounded-4xl hover:bg-use-gray hover:border-2 font-semibold">
+                                   View
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="text-[#E8E8E8]">
+
+                        <div class="flex pt-3 pb-3">
+                            <div>
+                                <img src="Screenshot 2026-01-29 161950.png" class="w-13" alt="">
+                            </div>
+                            <div class="font-medium pl-3">
+                                Someone at University of Sindh <br>
+                                <div class="py-2">
+                                    <button class="border border-[#424242] px-4 py-1 rounded-4xl hover:bg-use-gray hover:border-2 font-semibold">
+                                   View
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-borderSoft border rounded-lg ">
+                        <div class="py-4 px-6">
+                            <div class="relative">
+                                <p class="text-base font-medium">
+                                People you may know
+                                </p>
+                                <p class="text-gray">
+                                    From your industry
+                                </p>
+                            </div>
+                            <div class="flex pt-3 pb-3">
+                                <div class="">
+                                    <img src="image.png" class="rounded-full h-12 w-16 object-cover" alt="">
+                                </div>
+                                <div class="pl-3">
+                                    <p class="font-medium cursor-pointer hover:text-blue hover:underline ">Muhammad Abubakar Mughal</p>
+                                    <p class="text-sm">CS @ LUMS | Distributed & AI Systems Lab</p>
+                                    <div class="py-2">
+                                        <button class="border border-[#424242] px-3 py-1 rounded-4xl hover:bg-use-gray hover:border-2 font-semibold">
+                                            <i class="fa-solid fa-user-plus"></i> connect
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="text-[#E8E8E8]">
+
+                            <div class="flex pt-3 pb-3">
+                                <div class="">
+                                    <img src="image.png" class="rounded-full h-12 w-12 object-cover" alt="">
+                                </div>
+                                <div class=" pl-3">
+                                <p class="font-medium cursor-pointer hover:text-blue hover:underline">Muhammad Abdullah Jan</p>
+                                <p class="text-sm">Student at Lahore Grammar School</p>
+                                    <div class="py-2">
+                                        <button class="border border-[#424242] px-3 py-1 rounded-4xl hover:bg-use-gray hover:border-2 font-semibold">
+                                    <i class="fa-solid fa-user-plus"></i> connect
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="text-[#E8E8E8]">
+
+                            <div class="flex pt-3 pb-3">
+                                <div class="">
+                                    <img src="image.png" class="rounded-full h-12 w-24 object-cover" alt="">
+                                </div>
+                                <div class=" pl-3">
+                                    <p class="font-medium cursor-pointer hover:text-blue hover:underline">Hassaan Ahmed Chaudhary</p>
+                                    <p class="text-sm">Director International School of Cordoba Chunian | CEO House...</p>
+                                    <div class="py-2">
+                                        <button class="border border-[#424242] px-3 py-1 rounded-4xl hover:bg-use-gray hover:border-2 font-semibold">
+                                    <i class="fa-solid fa-user-plus"></i> connect
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="text-[#E8E8E8]">
+
+                            <div class="flex pt-3 pb-3">
+                                <div class="">
+                                    <img src="image.png" class="rounded-full h-12 w-20 object-cover" alt="">
+                                </div>
+                                <div class=" pl-3">
+                                    <p class="font-medium cursor-pointer hover:text-blue hover:underline">Muhammad Usman Noor</p>
+                                    <p class="text-sm">Behavioural Science & CS | Duke Kunshan University</p>
+                                    <div class="py-2">
+                                        <button class="border border-[#424242] px-3 py-1 rounded-4xl hover:bg-use-gray hover:border-2 font-semibold">
+                                    <i class="fa-solid fa-user-plus"></i> connect
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex pt-3 pb-3">
+                                <div class="">
+                                    <img src="image.png" class="rounded-full h-12 w-18 object-cover" alt="">
+                                </div>
+                                <div class=" pl-3">
+                                    <p class="font-medium cursor-pointer hover:text-blue hover:underline">Izzah Dar</p>
+                                    <p class="text-sm">LUMS ’25 | BSc. (Hons) Management Science</p>
+                                    <div class="py-2">
+                                        <button class="border border-[#424242] px-3 py-1 rounded-4xl hover:bg-use-gray hover:border-2 font-semibold">
+                                    <i class="fa-solid fa-user-plus"></i> connect
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" bg-white p-2.5 rounded-b-lg border-t border-borderSoft items-center text-center text-[#404040] font-medium hover:bg-use-gray hover:text-[#181818] cursor-pointer">
+                            Show all 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                   <img src="Screenshot 2026-01-29 160007.png" class="w-111 absolute -top-93.5" alt="">
                 </div>
             </div>
+            
 
         </div>
     </div>
