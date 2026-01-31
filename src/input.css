@@ -9,10 +9,11 @@
   --color-shadegray: #9E9E9E;
   --color-blue: #0A66C2;
   --color-use-gray: #F3F3F3;
+  --color-gray-line: #E8E8E8;
 }
 @layer components {
   .btn-primary {
-    @apply flex items-center hover:bg-[#F3F3F3] border border-lightgrey rounded-3xl px-3.5 py-1.5 hover:border-black;
+    @apply flex items-center hover:bg-use-gray border border-lightgrey rounded-3xl px-3.5 py-1.5 hover:border-black;
   }
 }
 
